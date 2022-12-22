@@ -28,6 +28,7 @@ height:800px;
     width: 70%;
     float:left;
     background-color: #f1f1f1;
+    height:800px
 
 }
 
@@ -42,10 +43,22 @@ height:800px;
 .pet-content {
     padding:20px;
 }
-.pet-content img {
-    float:left;
+.pet-content img {  
     margin-right:25px;
+    width:150px;
+}
 
+.photo-container {
+   margin:auto;
+   text-align: center;
+}
+.photo-container .photos {
+    display:inline-block;
+   
+}
+
+.mainimg {
+    float:left;
 }
 
 
