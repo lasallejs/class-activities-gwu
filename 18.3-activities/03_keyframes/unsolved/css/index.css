@@ -1,9 +1,11 @@
 .bounceMe {
   /* Add the animation bounceArrow here */
+  animation:bounceArrow .5s infinite;
 
 }
 .spinMe {
   /* Add the animation for spin on the line below  */
+  animation:spin 2s linear infinite; 
 
 }
 #progressbar {
@@ -11,6 +13,9 @@
   border-radius: 5px;
   margin-top: 61px;
   padding: 3px;
+
+
+
 }
 #progressbar > .orangeBar {
   background-color: red;
@@ -18,6 +23,10 @@
   height: 20px;
   border-radius: 5px;
   /* add the animation name here for the progress bar */
+  animation: loadBar 4s;
+  animation-fill-mode:forwards;
+
+
 }
 .movingBox {
   width: 50px;
@@ -29,31 +38,33 @@
 
 
 @keyframes bounceArrow {
-  from {
+  from { margin-top:0px;
 
   }
-  50% {
+  50% { margin-top: 7px;
 
   }
-  to {
+  to { margin-top:0px;
 
   }
 }
 
 @keyframes spin {
-  from {
+  from { transform: rotate(0deg);
 
   }
-  to {
+  to { transform: rotate(-360deg);
 
   }
 }
 
 @keyframes loadBar {
   from {
+    width:40%
 
   }
   to {
+    width: 100%
 
   }
 }

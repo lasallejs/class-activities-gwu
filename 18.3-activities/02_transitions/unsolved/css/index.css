@@ -19,11 +19,27 @@
   width: 150px;
   text-align: center;
   height: 50px;
+  transition:.5s;
   /* Add the css property transition here! */
 
 }
 /* active state */
 .hoverMe:hover {
+
   /* Add your hover state css here. */
+
+  background-color:rgb(255, 243, 192);
+  color:black;
+  border-color:yellow;
+  font-size:30px; 
+  cursor:pointer;
+
+}
+
+
+.button-help {
+  width:100px;
+  height:100px;
+  display:none;
 
 }
